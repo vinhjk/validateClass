@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validate(str) {
+        var regexp = /^[CAP][0-9]{4}[GHIJKL]$/;
+        var result = regexp.test(str);
+        if (result){
+            console.log("Accepted")
+        }else {
+            console.log("Retype");
+        }
+    }
+    var className1 = "C0318G";
+    var className2 = "M0318G";
+    var className3 = "P0323A";
+    validate(className1);
+    validate(className2);
+    validate(className3);
+</script>
+</body>
+</html>
